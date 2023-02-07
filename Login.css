@@ -1,0 +1,24 @@
+body{
+ 	background-image: url('logincar.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+h1{
+	font-family: 'Times New Roman', Times, serif;
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	/* border: 2px solid black; */
+	margin-top: 300px;
+}
+
+.form{
+	/* border: 2px solid red; */
+	margin-top: 100px;
+	padding: 20px;
+}
+
+/* .form.button.ADMIN{
+	background-color: red;
+} */
