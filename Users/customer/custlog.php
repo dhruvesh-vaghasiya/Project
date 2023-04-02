@@ -11,7 +11,7 @@
 
     <form name="login" action="custverify.php" method="post" onsubmit="return validateForm()">
         <div class="heading">
-            <h3>Customer</h3>
+            <h3>Customer Login</h3>
             <p>Login in with your username and password</p>
         </div>
 
