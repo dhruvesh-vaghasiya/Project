@@ -25,10 +25,14 @@
             <input type="password" placeholder="Enter Password" name="pwd" id="pwd" required>
 
             <div class="Container2">
-                <p class="fpwd"> <a href="verification.php">Forgot Password?</a></p>
+                <p class="fpwd"> <a href="forgot/verification.php">Forgot Password?</a></p>
             </div>
-
+            
             <button type="submit">Login</button>
+
+            <div class="Container3">
+                <p class="reg"> Not a member? <a href="ownerregist.php">  Register here </a></p>
+            </div>
         </div>
 
     </form>

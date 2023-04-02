@@ -29,6 +29,10 @@
             </div>
 
             <button type="submit">Login</button>
+
+            <div class="Container3">
+                <p class="reg"> Not a member? <a href="custregist.php">  Register here </a></p>
+            </div>
         </div>
 
     </form>

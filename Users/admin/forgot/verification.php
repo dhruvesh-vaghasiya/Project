@@ -40,6 +40,10 @@
             Role Model
             <input type="text" placeholder="Enter Role Model Name" name="role" required>
             <br><br>
+
+            <div class="Container2">
+                <p class="fpwd"> <a href="Reset.php">Reset Role Model</a></p>
+            </div>
             <button type="submit">Verify</button>
         </div>
 
