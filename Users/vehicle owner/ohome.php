@@ -41,6 +41,7 @@
         <div class="fa fa-user" id="login-btn"></div> -->
          <!-- <a href="login.html" class="btn1">Login</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
         <a href="registration.html" class="btn2">Register</a> -->
+        <a href="vehicle/vregist.php" class="btn2">Add Vehicle </a> 
     </div>
     <form class="search-form">
         <input type="search" id="search-box" placeholder="Serch Here...">

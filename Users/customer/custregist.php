@@ -10,8 +10,8 @@
 </head>
 <body>
 
-    <form name="registration"  action="custinsertdata.php" method="post" onsubmit="return validateForm()">
-        <div class="heading">
+    <form name="registration"  action="custinsertdata.php" method="post" onsubmit="return validateForm()" enctype="multipart/form-data">
+        <div class="heading"> 
             <h1>Customer Registration</h1>
         </div>
         <!-- Main container for all inputs -->
