@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vehicle Registration</title>
     <link rel="stylesheet" href="../css/vregist.css">
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
 
@@ -96,6 +98,6 @@
             </div>
         </div>
     </form>
-    <script src="js/validate_registdata.js"></script>
+    <script src="../js/validate_vehicledata.js"></script>
 </body>
 </html>

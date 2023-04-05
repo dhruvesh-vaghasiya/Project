@@ -1,6 +1,6 @@
 body{
   font-family: cursive;
-  background-image: url('image/gtr.jpg');
+  background-image: url('../image/gtr.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -106,4 +106,3 @@ input {
 .Container1 a:hover{
   color: black;
 }
-

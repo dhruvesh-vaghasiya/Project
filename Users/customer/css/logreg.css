@@ -1,6 +1,6 @@
 body{
   font-family: cursive;
-  background-image: url('image/gtr.jpg');
+  background-image: url('../image/gtr.jpg');
   background-attachment: fixed;
   background-size: cover;
   overflow: hidden;
