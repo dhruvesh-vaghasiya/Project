@@ -1,0 +1,143 @@
+h2{
+    margin-left: 14rem;
+    margin-top: 12rem;
+    font-size: 1.5rem;
+}
+
+p{
+    margin-left: 14rem;
+}
+
+.container1{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 980px;
+    height: 330px;
+    margin-left: 14rem;
+    margin-top: 6rem;
+}
+
+.img{
+    /* border: 2px solid red; */
+    width: 500px;
+    height: 323px;
+    margin: 2px;
+    display: flex;
+    position: absolute;
+}
+
+.vr1{
+    border: 1px solid rgb(110, 108, 108);
+    width: 0px;
+    height: 323px;
+    margin-left: 508px;
+    margin-top: 2px;
+    display: flex;
+    position: absolute;
+}
+.data{
+    /* border: 2px solid red; */
+    width: 430px;
+    height: 319px;
+    margin-left: 530px;
+    margin-top: 2px;
+    padding: 2px;
+}
+
+.vr2{
+    border: 1px solid rgb(110, 108, 108);
+    width: 0px;
+    height: 60px;
+    margin-left: 5px;
+    margin-top: 15px;
+    display: flex;
+    position: absolute;
+}
+
+.data .brand{
+    width: 220px;
+    height: 70px;
+    font-size: 1.6rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+    display: flex;
+    position: absolute;
+}
+h4{
+    margin: 0px;
+    height: 0px;
+    display: inline;
+    position: absolute;
+    color: rgb(93, 96, 96);
+}
+h3{
+    margin-left: 20px;
+    font-size: 33px;
+}
+
+.vr3{
+    border: 1px solid rgb(110, 108, 108);
+    width: 0px;
+    height: 60px;
+    margin-left: 235px;
+    margin-top: 15px;
+    display: flex;
+    position: absolute;
+}
+.data .color{
+    width: 170px;
+    height: 70px;
+    font-size: 1.6rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 240px;
+    margin-top: 10px;
+    display: flex;
+    position: absolute;
+}
+
+.data .price{
+    /* border: 2px solid red; */
+    width: 370px;
+    height: 170px;
+    font-size: 1.6rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 110px;
+    display: flex;
+    position: absolute;
+}
+
+h1{
+    margin: 0px;
+    height: 0px;
+    display: inline;
+    position: absolute;
+}
+
+.data .price p{
+    margin-top: 150px;
+    margin-left: 20px;
+    font-size: 27px;
+}
+
+table{
+    border: 2px solid black;
+    margin-top: 170px;
+    font-size: 1.5rem;
+    width: 600px;
+}
+
+th, td{
+    /* border: 1px solid red; */
+    padding: 12px;
+    border-bottom: 1px solid black;
+}
+
+th{
+    border-right: 1px solid black;
+    width: 277px;
+}
+
+td{
+    padding-left: 80px;
+    width: 202px;
+}
