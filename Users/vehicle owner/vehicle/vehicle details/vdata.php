@@ -1,7 +1,8 @@
 <?php
 session_start();
-$_SESSION['id']= 2;
-$id = $_SESSION['id'];
+// $_SESSION['id']= 2;
+// $id = $_SESSION['id'];
+$id = $_POST['vid'];
 $con=mysql_connect("localhost","root");
 $db=mysql_selectdb("project");
 $qry="SELECT * FROM vehicle WHERE vid=$id";
