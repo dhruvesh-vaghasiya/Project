@@ -1,8 +1,9 @@
 <?php
 session_start();
-// $_SESSION['id']= 2;
-// $id = $_SESSION['id'];
-$id = $_POST['vid'];
+$cid="dhruveshvaghasiya@gmail.com";
+$_SESSION['id']= 3;
+$id = $_SESSION['id'];
+// $id = $_POST['vid'];
 $con=mysql_connect("localhost","root");
 $db=mysql_selectdb("project");
 $qry="SELECT * FROM vehicle WHERE vid=$id";
@@ -20,6 +21,7 @@ if($cmd1)
         $ftype=$row[ftype];
         $seat=$row[seat];
         $photo=$row[photo];
+        $oid=$row[oid];
     ?>
         <html>
         <head>
@@ -81,8 +83,8 @@ if($cmd1)
                     <th>Rent Price</th>
                     <td><?php echo $price?></td>
                 </tr>   
-            </table>
-            </center>
+            </table><br><br><br>
+        </center>
         </body>
         </html>
     <?php

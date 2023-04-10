@@ -1,0 +1,35 @@
+header,
+main {
+  padding-left: 240px;
+}
+
+body {
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+@media only screen and (max-width: 992px) {
+  header,
+  main {
+    padding-left: 0;
+  }
+}
+
+#credits li,
+#credits li a {
+  color: white;
+}
+
+#credits li a {
+  font-weight: bold;
+}
+
+.fab-tip {
+  position: fixed;
+  right: 85px;
+  padding: 0px 0.5rem;
+  text-align: right;
+  background-color: #323232;
+  border-radius: 2px;
+  color: #fff;
+  width: auto;
+}

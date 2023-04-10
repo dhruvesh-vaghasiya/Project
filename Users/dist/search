@@ -1,0 +1,21 @@
+if (isset($_GET['submit'])) {
+    //Get search query from form
+    $search_query = $_GET['search_query'];
+
+    //Build SQL query
+    $sql = "SELECT * FROM table_name WHERE column_name LIKE '%$search_query%'";
+
+    //Execute SQL query
+    $result = mysqli_query($conn, $sql);
+
+    //Check if query was successful
+    if (!$result) {
+        die("Query failed: " . mysqli_error($conn));
+    }
+
+    //Display search results
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo "Result: " . $row['column_name'] . "<br>";
+    }
+}
+
