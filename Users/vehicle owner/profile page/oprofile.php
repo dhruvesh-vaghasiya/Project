@@ -102,6 +102,7 @@ $cmd1=mysql_query($qry,$con);
 if($cmd1)
 {
     while($row=mysql_fetch_array($cmd1)){
+        $vid=$row[vid];
         $name=$row[vname];
         $vno=$row[vno];
         $brand=$row[brand];
@@ -135,7 +136,7 @@ if($cmd1)
                     <div class="vr3"></div>
                     <div class="color">
                         <h4 class="h4">Color</h4>
-                        <h3><?php echo $color?></h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <h3><?php echo $color." ".$vid?></h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <a href="updatevehicle.php"><i class='fas fa-edit'
                         style='font-size:24px'></i></a>
                     </div>

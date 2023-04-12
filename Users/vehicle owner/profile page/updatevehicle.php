@@ -1,3 +1,32 @@
+<?php
+session_start();
+// $oid=$_SESSION['oid'];
+$vid=$_SESSION['vid'];
+$oid="dhruv@gmail.com";
+$con=mysql_connect("localhost","root");
+$db=mysql_selectdb("project");
+$qry="select * from vehicle where vid=$vid AND oid='$oid'";
+$cmd=mysql_query($qry,$con);
+$num=mysql_num_rows($cmd);
+if($num==0){
+    echo "Please enter correct id";
+}
+while($row=mysql_fetch_array($cmd)){
+    $name=$row[vname];
+    $vno=$row[vno];
+    $brand=$row[brand];
+    $color=$row[color];
+    $price=$row[price];
+    $date=$row[date];
+    $type=$row[type];
+    $ftype=$row[ftype];
+    $seat=$row[seat];
+    $photo=$row[photo];
+    $puc=$row[puc];
+    $rcbook=$row[rcbook];
+    $ins=$row[insurance];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,34 +41,42 @@
 </head>
 <body>
 
-    <form name="registration"  action="addvehicle.php" method="post" onsubmit="return validateForm()" enctype="multipart/form-data">
+    <form name="registration"  action="updvehicledb.php" method="post" onsubmit="return validateForm()" enctype="multipart/form-data">
+
+        <input type="hidden" name="vid" value="<?php echo $vid;?>">
+        <input type="hidden" name="oldphoto" value="<?php echo $photo;?>">
+        <input type="hidden" name="oldpuc" value="<?php echo $puc;?>">
+        <input type="hidden" name="oldrcbook" value="<?php echo $rcbook;?>">
+        <input type="hidden" name="oldins" value="<?php echo $ins;?>">
+
         <div class="heading">
             <h1>Update Vehicle's Details</h1>
         </div>
         <!-- Main container for all inputs -->
         <div class="Container1">
             <label class="cust">Vehicle Name:</label>
-            <input type="text" placeholder="Enter your Vehicle name" name="vname" >
+            <input type="text" placeholder="Enter your Vehicle name" name="vname" value="<?php echo $name;?>" >
 
             <br><br>
             <label class="cust">Vehicle Number:</label>
-            <input type="text" placeholder="Enter your vehicle number" name="vno" >
+            <input type="text" placeholder="Enter your vehicle number" name="vno" value="<?php echo $vno;?>" >
 
             <br><br>
             <label class="brand">Brand:</label>
-            <input type="text" placeholder="Enter your vehicle brand" name="brand">
+            <input type="text" placeholder="Enter your vehicle brand" name="brand" value="<?php echo $brand;?>">
 
             <br><br>
             <label class="color">Color:</label>
-            <input type="text" placeholder="Enter your vehicle color" name="color">
+            <input type="text" placeholder="Enter your vehicle color" name="color" value="<?php echo $color;?>">
 
             <br><br>
             <label class="price">Rent Price:</label>
-            <input type="text" placeholder="Enter your vehicle rental price/day" name="price">
+            <input type="text" placeholder="Enter your vehicle rental price/day" name="price" value="<?php echo $price;?>">
 
             <br><br>
             <label class="type">Type:</label>&nbsp;&nbsp;
             <select name="type" id="vcl">
+                <option value="<?php echo $type;?>"><?php echo $type?></option>
                 <option value="suv">SUV</option>
                 <option value="hatchback">HATCHBACK</option>
                 <option value="sedan">SEDAN</option>
@@ -58,6 +95,7 @@
             <br><br>
             <label class="fuel_type">Fuel Type:</label>&nbsp;&nbsp;
             <select name="fuel" id="ftype">
+                <option value="<?php echo $ftype;?>"><?php echo $ftype?></option>
                 <option value="petrol">PETROL</option>
                 <option value="petrol">DIESEL</option>
                 <option value="petrol">LPG</option>
@@ -69,7 +107,7 @@
 
             <br><br>
             <label class="vdate">Duration Date:</label>
-            <input type="date"  name="vdate">&nbsp;
+            <input type="date"  name="vdate" value="<?php echo $date;?>">&nbsp;
 
             <label class="Rcbook">RCBOOK:</label>
             <input type="file" name="rcbook"   id="rcbook">
@@ -77,6 +115,7 @@
             <br><br>
             <label class="seat">SEAT:</label>&nbsp;&nbsp;
             <select name="seat" id="seat">
+                <option value="<?php echo $seat;?>"><?php echo $seat?></option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -98,6 +137,11 @@
             </div>
         </div>
     </form>
+    <h2>Vehicle photo:- <img src="../owner_data/<?php echo $photo?>" alt="Image not found" width="50px" height="40px"></h2>
+    <a href="puc.php"><button class="pdf">View PUC</button></a>
+    <a href="rcbook.php"><button class="pdf">View Rcbook</button></a>
+    <a href="ins.php"><button class="pdf">View Insurance</button></a>
     <script src="../js/validate_vehicledata.js"></script>
 </body>
 </html>
+<?php } ?>
