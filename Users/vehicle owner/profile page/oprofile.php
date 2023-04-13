@@ -2,7 +2,7 @@
 session_start();
 // $id=$_POST[name];
 // if(isset($_SESSION['oid'])){}
-$id="dhruv@gmail.com";
+$id="dhruvpatel@gmail.com";
 $_SESSION['oid']=$id;
 if(isset($_SESSION['checkforupdate'])){
     $id=$_SESSION['updatedid'];
@@ -80,7 +80,8 @@ while($row=mysql_fetch_array($cmd)){
                         <p><?php echo $add;?></p>
                     </div>
 
-                    <center><a href="logout.php"><button>Logout</button></a></center>
+                    <center><a href="../vehicle/vregist.php"><button>Add Vehicle</button></a>
+                    <a href="logout.php"><button>Logout</button></a></center>
 
                 </div>
             </div>
@@ -136,13 +137,16 @@ if($cmd1)
                     <div class="vr3"></div>
                     <div class="color">
                         <h4 class="h4">Color</h4>
-                        <h3><?php echo $color." ".$vid?></h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="updatevehicle.php"><i class='fas fa-edit'
+                        <h3><?php echo $color?></h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="updatevehicle.php?vid=<?php echo $vid;?>"><i class='fas fa-edit'
                         style='font-size:24px'></i></a>
                     </div>
                     <div class="price">
                         <h1>&#x20b9;<?php echo $price?>/day</h1>
                         <p>Available till:- <?php echo $date?></p>
+                    </div>
+                    <div class="delete">
+                        <a href="delete.php?vid=<?php echo $vid;?>"><button>Delete</button></a>
                     </div>
                 </div>
             </div>

@@ -1,14 +1,14 @@
 <?php
 session_start();
 $cid="dhruveshvaghasiya@gmail.com";
-$id = $_GET['vid'];
 $con=mysql_connect("localhost","root");
 $db=mysql_selectdb("project");
-$qry="SELECT * FROM vehicle WHERE vid=$id";
+$qry="SELECT * FROM vehicle";
 $cmd1=mysql_query($qry,$con);
 if($cmd1)
 {
     while($row=mysql_fetch_array($cmd1)){
+        $vid=$row[vid];
         $name=$row[vname];
         $vno=$row[vno];
         $brand=$row[brand];
@@ -24,18 +24,20 @@ if($cmd1)
         <html>
         <head>
             <title>Vehicle Details Webpage</title>
-            <link rel="stylesheet" href="vdata.css">
+            <link rel="stylesheet" href="vehiclelist.css">
         </head>
         <body>
-            <h2><?php echo $name?></h2>
-            <p>Review Section</p>
             <div class="container1">
                 <div class="img">
-                    <img src=" <?php echo "../../owner_data/".$photo; ?>" alt="image not found" width="500px" height="323px">
+                    <img src=" <?php echo "../owner_data/".$photo; ?>" alt="image not found" width="500px" height="323px">
                 </div> 
                 <div class="vr1"></div>
                 <div class="data">
                     <div class="vr2"></div>
+                    <div class="name">
+                        <h2><?php echo $name?></h2>
+                        <a href="vehicle details/vdata.php?vid=<?php echo $vid;?>"><p>View More Details...</p></a>
+                    </div>
                     <div class="brand">
                         <h4>Brand</h4>
                         <h3><?php echo $brand?></h3>
@@ -46,43 +48,13 @@ if($cmd1)
                         <h3><?php echo $color?></h3>
                     </div>
                     <div class="price">
-                        <h1><?php echo $price?></h1>
+                        <h1>&#x20B9;<?php echo $price?>/day</h1>
                         <p>Available till:- <?php echo $date?></p>
+                        <a href="vehicle details/vdata.php?vid=<?php echo $vid;?>"><button>Rent Now</button></a>
                     </div>
                 </div>
             </div>
-            <center>
-            <table>
-                <tr>
-                    <th>Number</th>
-                    <td><?php echo $vno?></td>
-                </tr>
-                <tr>
-                    <th>Type</th>
-                    <td><?php echo $type?></td>
-                </tr>
-                <tr>
-                    <th>Fuel Type</th>
-                    <td><?php echo $ftype?></td>
-                </tr>
-                <tr>
-                    <th>Seat</th>
-                    <td><?php echo $seat?></td>
-                </tr>
-                <tr>
-                    <th>Brand</th>
-                    <td><?php echo $brand?></td>
-                </tr>
-                <tr>
-                    <th>Color</th>
-                    <td><?php echo $color?></td>
-                </tr>
-                <tr>
-                    <th>Rent Price</th>
-                    <td><?php echo $price?></td>
-                </tr>   
-            </table><br><br><br>
-        </center>
+            <br><br><br>
         </body>
         </html>
     <?php

@@ -32,8 +32,8 @@ session_start();
 			move_uploaded_file($_FILES["puc"]["tmp_name"], "../owner_data/".$_FILES["puc"]["name"]);
 			move_uploaded_file($_FILES["rcbook"]["tmp_name"], "../owner_data/".$_FILES["rcbook"]["name"]);
 			move_uploaded_file($_FILES["insurance"]["tmp_name"], "../owner_data/".$_FILES["insurance"]["name"]);
-			// header("location:custlog.php");	
-            echo "Data inserted";
+			header("location:../profile page/oprofile.php");	
+            // echo "Data inserted";
 		}
 		else
 		{

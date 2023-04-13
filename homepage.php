@@ -5,7 +5,7 @@
         </title>
 
        
-     <link rel="stylesheet" href="css/index.css">   
+     <link rel="stylesheet" href="index.css">   
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
@@ -36,12 +36,54 @@
 
     </head>
     <body>
-      <!-- header section  -->
-    <?php include '../head.php' ?>
-    <!-- header section  -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
-    <!-- Banner slider section -->
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <a href="#" class="logo navbar-brand"><i class="fa fa-car" aria-hidden="true"></i></a>
+
+             <!-- Navbar text-->
+             <span class="navbar-text">
+                Vehicle Renting System  
+              </span>
+
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <!-- Links -->
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Vehicles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Our services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact us</a>
+                </li>
+              </ul>
+
+              <div class="icon">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <!-- <div class="fa fa-bars" id="menu-btn"></div> -->
+             
+                <!-- <div class="fa fa-shopping-cart" id="cart-btn"></div>
+                <div class="fa fa-user" id="login-btn"></div> -->
+                 <a href="html/login.html" class="btn1 btn btn-danger" style=" padding: 0.75rem 0.3rem;">Login</a><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                <a href="html/registration.html" class="btn2 btn btn-danger"style=" padding: 0.75rem 0.3rem;">Register</a>
+            </div>
+           
+            
+            </nav>
+
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 
                 <div class="carousel-item active">
@@ -65,10 +107,12 @@
               </a>
               
             </div>
-    <!-- Banner slider section -->
-    <br>
-    <!-- Vehicle box slider section -->
-      <h1 class="heading" id="features" style="text-align: center;"> Our <span>Popular Vehicles</span></h1>
+
+            
+
+            <br>
+    
+            <h1 class="heading" id="features" style="text-align: center;"> Our <span>Popular Vehicles</span></h1>
             <div class="listing-section">
               <div class="carousel" data-flickity='{"groupCells": true }'>
               <div class="product">
@@ -150,17 +194,62 @@
                 </div>
               </div>
               </div>
-    <!-- Vehicle box slider section-->
-    <br>
-<!-- Brand section -->
+
+              <br>
 <h1 class="heading" id="brand" style="text-align: center;"> All <span>Brands</span></h1>
 <div class="brand"><img src="image/brand.jpg" alt="image not opened" style="width: 100%;"></div>
-<!-- Brand section -->
-<br><br><br><br><br>
+
+<br><br><br><br><br><br><br><br>
 
 <!-- footer section -->
-<?php include '../foot.php' ?>
+
+
+<section class="footer" id="footer">
+  <div class="box-container">
+      <div class="box">
+          <h3>Vehicle Rental Services <i class="fa fa-car" aria-hidden="true"></i></h3><br><br>
+          <p>Feel free to follow us on our social media handlers. All the links are given below</p>
+          <div class="share">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-linkedin"></a>
+          </div>
+      </div>
+
+      <div class="box">
+        <h3>Contact info</h3><br>
+        <a href="#" class="links"><i class="fa fa-phone"></i> +91 8780463161</a>
+        <a href="#" class="links"><i class="fa fa-phone"></i> +91 9173561696</a>
+        <a href="#" class="links"><i class="fa fa-envelope"></i> dhruveshpatel2005@gmail.com</a>
+        <a href="#" class="links"><i class="fa fa-map-marker"></i> Anand, India 388120</a>
+      </div>
+
+      <div class="box">
+        <h3>Quick Links</h3><br>
+        <a href="#home" class="links"><i class="fa fa-arrow-right"></i> Home</a>
+        <a href="#features" class="links"><i class="fa fa-arrow-right"></i> Features</a>
+        <a href="#products" class="links"><i class="fa fa-arrow-right"></i> Vehicles</a>
+        <a href="#brand" class="links"><i class="fa fa-arrow-right"></i> Our Services</a>
+        <a href="#footer" class="links"><i class="fa fa-arrow-right"></i> Contact Us</a>
+      </div>
+
+      <div class="box">
+        <h3>Newsletters</h3><br>
+        <p>Subscribe for Latest Update</p>
+        <input type="email" placeholder="Your Email" class="email">
+        <input type="submit" value="Subscribe" class="btn">
+      </div>
+  </div>
+</section>
 <!-- Footer Section -->
-<script src="js/preventback.js"></script>
-</body>
-</html>
+  
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="js/home.js"></script>
+
+
+
+    </body>
+
+    </html>

@@ -18,7 +18,7 @@ while($row=mysql_fetch_array($cmd)){
 <?php 
 if($pass==$pwd){
 	$_SESSION['name']=$name;
-	header("location:chome.html?un=".$_SESSION['name']);
+	header("location:chome.php?un=".$_SESSION['name']);
 }
 else{	
 	echo "Please enter correct password";

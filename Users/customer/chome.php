@@ -36,11 +36,11 @@
 
     </head>
     <body>
-      <!-- header section  -->
-    <?php include '../head.php' ?>
-    <!-- header section  -->
+      <!-- header section -->
+      <?php include '../head.php'; ?>
+      <!-- header section -->
 
-    <!-- Banner slider section -->
+      <!-- Banner slider section  -->
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 
@@ -65,10 +65,10 @@
               </a>
               
             </div>
-    <!-- Banner slider section -->
+    <!-- Banner slider section  -->
     <br>
-    <!-- Vehicle box slider section -->
-      <h1 class="heading" id="features" style="text-align: center;"> Our <span>Popular Vehicles</span></h1>
+    <!-- Vehicle image slider section -->
+            <h1 class="heading" id="features" style="text-align: center;"> Our <span>Popular Vehicles</span></h1>
             <div class="listing-section">
               <div class="carousel" data-flickity='{"groupCells": true }'>
               <div class="product">
@@ -79,7 +79,7 @@
                   <h2 class="item">hyundai i10</h2>
                   <h3 class="price">$4.99</h3>
                   <p class="description">A bag of delicious oranges!</p>
-                  <button type="button" name="item-1-button" id="item-1-button" style="width: 100%;" id="addcart">Add to Cart</button>
+                  <!-- <button type="button" name="item-1-button" id="item-1-button" style="width: 100%;" id="addcart">Add to Cart</button> -->
                 </div>
               </div>
               <div class="product">
@@ -90,8 +90,7 @@
                   <h2 class="item">audi a7</h2>
                   <h3 class="price">$4.99</h3>
                   <p class="description">A bag of delicious apples!</p>
-              
-                  <button type="button" name="item-2-button" id="item-2-button" style="width: 100%;"id="addcart">Add to Cart</button>
+                  <!-- <button type="button" name="item-2-button" id="item-2-button" style="width: 100%;"id="addcart">Add to Cart</button> -->
                 </div>
               </div>
               <div class="product">
@@ -102,7 +101,7 @@
                   <h3 class="item">lamborgini saffire</h3>
                   <h3 class="price">$4.99</h3>
                   <p class="description">A bag of delicious passionfruit!</p>
-                 <button type="button" name="item-3-button" style="width: 100%;" id="item-3-button"id="addcart">Add to Cart</button>
+                  <!-- <button type="button" name="item-3-button" style="width: 100%;" id="item-3-button"id="addcart">Add to Cart</button> -->
                 </div>
               </div>
               <div class="product">
@@ -113,7 +112,7 @@
                   <h3 class="item">lamborgini saffire</h3>
                   <h3 class="price">$4.99</h3>
                   <p class="description">A bag of delicious passionfruit!</p>
-                 <button type="button" name="item-3-button" style="width: 100%;" id="item-3-button"id="addcart">Add to Cart</button>
+                  <!-- <button type="button" name="item-3-button" style="width: 100%;" id="item-3-button"id="addcart">Add to Cart</button> -->
                 </div>
               </div>
               <div class="product">
@@ -124,7 +123,7 @@
                   <h3 class="item">lamborgini saffire</h3>
                   <h3 class="price">$4.99</h3>
                   <p class="description">A bag of delicious passionfruit!</p>
-                 <button type="button" name="item-3-button" style="width: 100%;" id="item-3-button"id="addcart">Add to Cart</button>
+                  <!-- <button type="button" name="item-3-button" style="width: 100%;" id="item-3-button"id="addcart">Add to Cart</button> -->
                 </div>
               </div>
               <div class="product">
@@ -135,7 +134,7 @@
                   <h3 class="item">lamborgini saffire</h3>
                   <h3 class="price">$4.99</h3>
                   <p class="description">A bag of delicious passionfruit!</p>
-                 <button type="button" name="item-3-button" style="width: 100%;" id="item-3-button"id="addcart">Add to Cart</button>
+                  <!-- <button type="button" name="item-3-button" style="width: 100%;" id="item-3-button"id="addcart">Add to Cart</button> -->
                 </div>
               </div>
               <div class="product">
@@ -146,20 +145,21 @@
                   <h3 class="item">mercedes eclass</h3>
                   <h3 class="price">$4.99</h3>
                   <p class="description">A bag of delicious pineapples!</p>
-                  <button type="button" name="item-4-button" id="item-4-button" style="width: 100%;" id="addcart">Add to Cart</button>
+                  <!-- <button type="button" name="item-4-button" id="item-4-button" style="width: 100%;" id="addcart">Add to Cart</button> -->
                 </div>
               </div>
               </div>
-    <!-- Vehicle box slider section-->
+    <!-- Vehicle image slider section -->
     <br>
-<!-- Brand section -->
+  <!-- Brands section  -->
 <h1 class="heading" id="brand" style="text-align: center;"> All <span>Brands</span></h1>
 <div class="brand"><img src="image/brand.jpg" alt="image not opened" style="width: 100%;"></div>
-<!-- Brand section -->
-<br><br><br><br><br>
+<!-- Brands section  -->
+
+<br><br><br><br><br><br><br><br>
 
 <!-- footer section -->
-<?php include '../foot.php' ?>
+<?php include '../foot.php'; ?>
 <!-- Footer Section -->
 <script src="js/preventback.js"></script>
 </body>

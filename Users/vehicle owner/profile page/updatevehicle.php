@@ -1,7 +1,8 @@
 <?php
 session_start();
 // $oid=$_SESSION['oid'];
-$vid=$_SESSION['vid'];
+// $vid=$_SESSION['vid'];
+$vid=$_GET['vid'];
 $oid="dhruv@gmail.com";
 $con=mysql_connect("localhost","root");
 $db=mysql_selectdb("project");

@@ -178,8 +178,8 @@ input[type=submit]{
 button{
   background-color: red;
   color: white;
-  width: 110px;
-  height: 43px;
+  width: 200px;
+  height: 53px;
   font-size: 1.6rem;
   border-radius: 20px;
 }
@@ -188,6 +188,11 @@ button:hover{
   color: black;
   background-color: rgb(255, 74, 74);
   cursor: pointer;
+}
+
+.delete a button{
+  background-color: black;
+  margin-top: 200px;
 }
 
 /* Vehicle details css */

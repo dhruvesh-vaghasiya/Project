@@ -39,7 +39,7 @@ while($row=mysql_fetch_array($cmd)){
 
     <div class="wrapper">
         <div class="left">
-            <img src="alex.jpg" alt="user" width="200" height="200px">
+            <img src="image/alex.jpg" alt="user" width="200" height="200px">
             <h4><?php echo $name;?></h4>
         </div>
         <div class="right">
@@ -78,6 +78,7 @@ while($row=mysql_fetch_array($cmd)){
                         <p><?php echo $add;?></p>
                     </div>
 
+                    <center><a href="logout.php"><button>Logout</button></a></center>
                 </div>
             </div>
         </div>
