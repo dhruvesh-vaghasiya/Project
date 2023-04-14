@@ -192,7 +192,9 @@ button:hover{
 
 .delete a button{
   background-color: black;
-  margin-top: 200px;
+  margin-top: 250px;
+  margin-left: 370px;
+  width: 140px;
 }
 
 /* Vehicle details css */
@@ -209,9 +211,9 @@ p{
 .container1{
   border: 2px solid black;
   border-radius: 5px;
-  width: 1010px;
+  width: 1060px;
   height: 330px;
-  margin-left: 17rem;
+  margin-left: 15rem;
   margin-top: 6rem;
   margin-bottom: 20px;
 }

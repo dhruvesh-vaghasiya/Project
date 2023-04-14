@@ -1,3 +1,10 @@
+<html>
+    <head>
+        <title>Vehicle Details Webpage</title>
+        <?php include '../ohead.php' ?>
+        <link rel="stylesheet" href="listvehicle.css">
+    </head>
+<body>
 <?php
 session_start();
 $cid="dhruveshvaghasiya@gmail.com";
@@ -21,31 +28,25 @@ if($cmd1)
         $photo=$row[photo];
         $oid=$row[oid];
     ?>
-        <html>
-        <head>
-            <title>Vehicle Details Webpage</title>
-            <link rel="stylesheet" href="vehiclelist.css">
-        </head>
-        <body>
-            <div class="container1">
+        <div class="container1">
                 <div class="img">
-                    <img src=" <?php echo "../owner_data/".$photo; ?>" alt="image not found" width="500px" height="323px">
+                    <img src=" <?php echo "owner_data/".$photo; ?>" alt="image not found" width="500px" height="323px">
                 </div> 
                 <div class="vr1"></div>
                 <div class="data">
                     <div class="vr2"></div>
                     <div class="name">
                         <h2><?php echo $name?></h2>
-                        <a href="vehicle details/vdata.php?vid=<?php echo $vid;?>"><p>View More Details...</p></a>
+                        <a href="vehicle/vehicle details/vdata.php?vid=<?php echo $vid;?>"><p>View More Details...</p></a>
                     </div>
                     <div class="brand">
                         <h4>Brand</h4>
-                        <h3><?php echo $brand?></h3>
+                        <h5><?php echo $brand?></h5>
                     </div>
                     <div class="vr3"></div>
                     <div class="color">
                         <h4>Color</h4>
-                        <h3><?php echo $color?></h3>
+                        <h5><?php echo $color?></h5>
                     </div>
                     <div class="price">
                         <h1>&#x20B9;<?php echo $price?>/day</h1>
@@ -59,6 +60,7 @@ if($cmd1)
         </html>
     <?php
     }
+    include '../foot.php';
 }
 else
 	echo "Query not run";

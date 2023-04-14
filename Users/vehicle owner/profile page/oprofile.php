@@ -32,12 +32,12 @@ while($row=mysql_fetch_array($cmd)){
     <meta charset="UTF-8">
     <title>User Profile</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="oprofile.css">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </head>
 
 <body>
-
     <div class="wrapper">
         <div class="left">
             <img src="alex.jpg" alt="user" width="200" height="200px">
@@ -137,7 +137,7 @@ if($cmd1)
                     <div class="vr3"></div>
                     <div class="color">
                         <h4 class="h4">Color</h4>
-                        <h3><?php echo $color?></h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <h3><?php echo $color?></h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <a href="updatevehicle.php?vid=<?php echo $vid;?>"><i class='fas fa-edit'
                         style='font-size:24px'></i></a>
                     </div>

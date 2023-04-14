@@ -37,7 +37,7 @@
     </head>
     <body>
       <!-- header section  -->
-    <?php include '../head.php' ?>
+    <?php include '../oheadhome.php' ?>
     <!-- header section  -->
 
     <!-- Banner slider section -->

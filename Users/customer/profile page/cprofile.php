@@ -31,12 +31,12 @@ while($row=mysql_fetch_array($cmd)){
     <meta charset="UTF-8">
     <title>User Profile</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <?php include '../../chead.php' ?>
+    <link rel="stylesheet" href="cprofile.css">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </head>
 
 <body>
-
     <div class="wrapper">
         <div class="left">
             <img src="image/alex.jpg" alt="user" width="200" height="200px">
@@ -46,7 +46,7 @@ while($row=mysql_fetch_array($cmd)){
             <div class="info">
                 <h3>
                     Customer Information
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="updateprofile.php"><i class='fas fa-edit' style='font-size:24px'></i></a></h3>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="updateprofile.php"><i class='fas fa-edit' style='font-size:24px'></i></a></h3>
                 <div class="info_data">
                     <div class="data1">
                         <h4>Email id</h4>

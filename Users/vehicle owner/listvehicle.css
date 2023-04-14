@@ -13,7 +13,7 @@
 
 .data .name p{
     margin-top: 0px;
-    margin-left: 400px;
+    margin-left: 390px;
     font-size: 1.3rem;
 }
 
@@ -67,7 +67,7 @@
     width: 0px;
     height: 60px;
     margin-left: 5px;
-    margin-top: 90px;
+    margin-top: 85px;
     display: flex;
     position: absolute;
 }
@@ -81,14 +81,27 @@
     display: flex;
     position: absolute;
 }
-h4{
+.data .brand h4{
     margin: 0px;
     height: 0px;
     display: inline;
     position: absolute;
     color: rgb(93, 96, 96);
 }
-h3{
+.data .color h4{
+    margin: 0px;
+    height: 0px;
+    display: inline;
+    position: absolute;
+    color: rgb(93, 96, 96);
+}
+.data .brand h5{
+    margin-top: 35px;
+    margin-left: 20px;
+    font-size: 33px;
+}
+.data .color h5{
+    margin-top: 32px;
     margin-left: 20px;
     font-size: 33px;
 }
@@ -124,7 +137,7 @@ h3{
     position: absolute;
 }
 
-h1{
+.data .price h1{
     margin: 0px;
     height: 0px;
     display: inline;
@@ -132,7 +145,7 @@ h1{
 }
 
 .data .price p{
-    margin-top: 100px;
+    margin-top: 90px;
     font-size: 27px;
 }
 

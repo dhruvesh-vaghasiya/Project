@@ -1,6 +1,6 @@
 <html>
 <head>
-<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/headfoot.css">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
@@ -42,13 +42,13 @@
 <!-- Links -->
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="customer/chome.php">Home</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#">Features</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Vehicles</a>
+        <a class="nav-link" href="vehicle owner/vehiclelist.php">Vehicles</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="#">Our services</a>
@@ -59,7 +59,7 @@
   </ul>
 
   <div class="icon">
-  <a href="profile page/cprofile.php"><img src="image/user.png" alt="profile icon not found" width="30px" height="30px"></a>
+  <a href="customer/profile page/cprofile.php"><img src="image/user.png" alt="profile icon not found" width="30px" height="30px"></a>
   </div>
 </nav>
 </body>
