@@ -1,32 +1,4 @@
-<?php
-session_start();
-// $oid=$_SESSION['oid'];
-// $vid=$_SESSION['vid'];
-$vid=$_GET['vid'];
-$oid="dhruv@gmail.com";
-$con=mysql_connect("localhost","root");
-$db=mysql_selectdb("project");
-$qry="select * from vehicle where vid=$vid";
-$cmd=mysql_query($qry,$con);
-$num=mysql_num_rows($cmd);
-if($num==0){
-    echo "Please enter correct id";
-}
-while($row=mysql_fetch_array($cmd)){
-    $name=$row[vname];
-    $vno=$row[vno];
-    $brand=$row[brand];
-    $color=$row[color];
-    $price=$row[price];
-    $date=$row[date];
-    $type=$row[type];
-    $ftype=$row[ftype];
-    $seat=$row[seat];
-    $photo=$row[photo];
-    $puc=$row[puc];
-    $rcbook=$row[rcbook];
-    $ins=$row[insurance];
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -36,7 +8,7 @@ while($row=mysql_fetch_array($cmd)){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vehicle Registration</title>
-    <link rel="stylesheet" href="css/vregist.css">
+    <link rel="stylesheet" href="vregist.css">
     <script src="sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
@@ -89,7 +61,7 @@ while($row=mysql_fetch_array($cmd)){
                 <option value="tractor">TRACTOR</option>
                 <option value="electric vehicle">ELECTRIC VEHICLE</option>
             </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
+       
             <label class="photo">Photo:</label>
             <input type="file" name="photo"  id="photo">
 
@@ -112,7 +84,7 @@ while($row=mysql_fetch_array($cmd)){
 
             <label class="Rcbook">RCBOOK:</label>
             <input type="file" name="rcbook"   id="rcbook">
-
+      
             <br><br>
             <label class="seat">SEAT:</label>&nbsp;&nbsp;
             <select name="seat" id="seat">
@@ -138,19 +110,13 @@ while($row=mysql_fetch_array($cmd)){
             </div>
         </div>
     </form>
-    <div class="img">
-        <h2>Vehicle photo: <img src="../owner_data/<?php echo $photo?>" alt="Image not found" width="200px" height="100px"></h2>
-    </div>
-    <div class="viewpuc">
-        <a href="puc.php"><button>View Registered PUC</button></a>
-    </div>
-    <div class="viewbook">
-        <a href="rcbook.php"><button>View Registered Rcbook</button></a>
-    </div>
-    <div class="viewins">
-        <a href="ins.php"><button>View Registered Insurance</button></a>
-    </div>
+    
+    <a>Vehicle photo:- <img src="../owner_data/<?php echo $photo?>" alt="Image not found" width="50px" height="40px"></a>
+    <a href="puc.php"><button class="pdf">View PUC</button></a>
+    <a href="rcbook.php"><button class="pdf">View Rcbook</button></a>
+    <a href="ins.php"><button class="pdf">View Insurance</button></a>
     <script src="../js/validate_vehicledata.js"></script>
+
 </body>
 </html>
 <?php } ?>

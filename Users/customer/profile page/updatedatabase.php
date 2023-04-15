@@ -1,6 +1,6 @@
 <?php
 session_start();
-$cid=$_SESSION['cid'];
+$cid=$_SESSION['oldcid'];
 $name=$_POST['name'];
 $num=$_POST['cno'];
 $birth=$_POST['date'];
@@ -10,7 +10,7 @@ $pass=$_POST['pwd'];
 $add=$_POST['add'];
 $role=$_POST['role'];
 
-// echo $oid." ".$name."  ".$num." ".$birth."  ".$city." ".$id." ".$pass." ".$add." ".$role;
+// echo $cid." ".$name."  ".$num." ".$birth."  ".$city." ".$id." ".$pass." ".$add." ".$role;
 $con=mysql_connect("localhost","root");
 $db=mysql_selectdb("project");
 $query="update customer set cid='$id', pwd='$pass', cname='$name', cno='$num', cbdate='$birth', c_city='$city', cadd='$add', fpass='$role' where cid='$cid'";

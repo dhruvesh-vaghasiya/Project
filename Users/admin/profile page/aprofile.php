@@ -27,7 +27,7 @@ while($row=mysql_fetch_array($cmd)){
     <meta charset="UTF-8">
     <title>User Profile</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="aprofile.css">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </head>
 
@@ -55,8 +55,12 @@ while($row=mysql_fetch_array($cmd)){
                     </div>
                 </div>
 
-                <a href="custdetails.php"></a><button>Check Customer</button>
-                <a href="ownerdetails.php"></a><button>Check Vehicle Owner</button>
+                <div class="cust">
+                    <a href="custdetails.php"><button>Check Customer</button></a>
+                </div>
+                <div class="owner">
+                    <a href="ownerdetails.php"><button>Check Vehicle Owner</button></a>
+                </div>
             </div>
         </div>
     </div>

@@ -42,19 +42,19 @@
 <!-- Links -->
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="../chome.php">Home</a>
+      <a class="nav-link" href="chome.php">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="../chome.php">Features</a>
+      <a class="nav-link" href="#features">Features</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="../../vehicle owner/vehiclelist.php">Vehicles</a>
+        <a class="nav-link" href="../vehicle owner/vehiclelist.php">Vehicles</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="../chome.php">Our services</a>
+        <a class="nav-link" href="#brand">Our services</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="../chome.php">Contact us</a>
+        <a class="nav-link" href="#footer">Contact us</a>
     </li>
   </ul>
 

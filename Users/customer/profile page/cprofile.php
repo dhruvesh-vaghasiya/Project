@@ -1,7 +1,7 @@
 <?php 
 session_start();
 // $id=$_POST[name];
-$id="vaghasiyadhruvesh@gmail.com";
+$id="maryhearn@gmail.com";
 $_SESSION['cid']=$id;
 if(isset($_SESSION['checkupdate'])){
     $id=$_SESSION['updatecid'];
@@ -46,7 +46,7 @@ while($row=mysql_fetch_array($cmd)){
             <div class="info">
                 <h3>
                     Customer Information
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="updateprofile.php"><i class='fas fa-edit' style='font-size:24px'></i></a></h3>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="updateprofile.php?cid=<?php echo $cid;?>"><i class='fas fa-edit' style='font-size:24px'></i></a></h3>
                 <div class="info_data">
                     <div class="data1">
                         <h4>Email id</h4>

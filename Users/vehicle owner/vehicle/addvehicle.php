@@ -15,6 +15,7 @@ session_start();
 	$rcbook=$_FILES['rcbook']['name'];
 	$ins=$_FILES['insurance']['name'];
     $oid = $_SESSION['oid'];
+	$status=0;
 
 		$con=mysql_connect("localhost","root");
 		$db=mysql_selectdb("project");
@@ -23,7 +24,7 @@ session_start();
 		else
 			echo "Database not selected";
 
-		$qry="insert into vehicle(vname, vno, brand, color, price, date, type, ftype, seat, photo, puc, rcbook, insurance, oid) values ('$name','$vno','$brand','$color','$price','$date','$type', '$ftype', '$seat', '$photo', '$puc', '$rcbook', '$ins', '$oid')";
+		$qry="insert into vehicle(vname, vno, brand, color, price, date, type, ftype, seat, photo, puc, rcbook, insurance, oid, status) values ('$name','$vno','$brand','$color','$price','$date','$type', '$ftype', '$seat', '$photo', '$puc', '$rcbook', '$ins', '$oid', $status)";
 		// $qry="insert into vehicle values ('swift','321','maruti','white','1000', '02-12-2023','car','diesel','5', 'car.jpg', 'puc.jpg', 'rcbk.jpg', 'insurance.jpg', 'dhruveshpatel@gmail.com');";
 	   	$cmd=mysql_query($qry,$con);
 		if($cmd)

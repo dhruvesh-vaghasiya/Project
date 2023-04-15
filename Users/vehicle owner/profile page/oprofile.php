@@ -33,7 +33,7 @@ while($row=mysql_fetch_array($cmd)){
     <title>User Profile</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <link rel="stylesheet" href="oprofile.css">
+    <link rel="stylesheet" href="oprof.css">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </head>
 
@@ -42,6 +42,7 @@ while($row=mysql_fetch_array($cmd)){
         <div class="left">
             <img src="alex.jpg" alt="user" width="200" height="200px">
             <h4><?php echo $name;?></h4>
+            <a href="../ohome.php"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
         </div>
         <div class="right">
             <div class="info">
@@ -114,14 +115,18 @@ if($cmd1)
         $ftype=$row[ftype];
         $seat=$row[seat];
         $photo=$row[photo];
+        $status=$row[status];
+    ?>
+    <?php 
+    if($status){
+        $stt="Vehicle Booked";
+    }else{
+        $stt="Vehicle not booked";
+    }
     ?>
         <html>
-        <head>
-            <title>Vehicle Details Webpage</title>
-            <link rel="stylesheet" href="vdate.css">
-        </head>
         <body>
-            <h2><?php echo $name?></h2>
+            <h2><?php echo $name;?></h2>
             <p>Review Section</p>
             <div class="container1">
                 <div class="img">
@@ -137,16 +142,17 @@ if($cmd1)
                     <div class="vr3"></div>
                     <div class="color">
                         <h4 class="h4">Color</h4>
-                        <h3><?php echo $color?></h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <h3><?php echo $color?></h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <a href="updatevehicle.php?vid=<?php echo $vid;?>"><i class='fas fa-edit'
                         style='font-size:24px'></i></a>
                     </div>
                     <div class="price">
                         <h1>&#x20b9;<?php echo $price?>/day</h1>
+                        <h5>Status: <?php echo $stt; ?></h5>
                         <p>Available till:- <?php echo $date?></p>
                     </div>
                     <div class="delete">
-                        <a href="delete.php?vid=<?php echo $vid;?>"><button>Delete</button></a>
+                        <center><a href="delete.php?vid=<?php echo $vid;?>">Delete</a></center>
                     </div>
                 </div>
             </div>

@@ -37,7 +37,7 @@
     </head>
     <body>
       <!-- header section -->
-      <?php include '../chead.php'; ?>
+      <?php include '../cheadhome.php'; ?>
       <!-- header section -->
 
       <!-- Banner slider section  -->

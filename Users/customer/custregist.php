@@ -17,45 +17,45 @@
         <!-- Main container for all inputs -->
         <div class="Container1">
             Name:
-            <input type="text" placeholder="Enter your full name" name="cname" >
+            <input type="text" placeholder="Enter your full name" name="cname" required>
 
             <br><br>
             <label class="cust">Number:</label>
-            <input type="number" placeholder="Enter your number" name="cno" >
+            <input type="number" placeholder="Enter your number" name="cno" required>
 
           
             <label class="bdate">Birthdate:</label>
-            <input type="date" placeholder="Enter your Birthdate" name="cbdate">
+            <input type="date" placeholder="Enter your Birthdate" name="cbdate" required>
 
             <br><br>
             <label class="city">City:</label>
-            <input type="text" placeholder="Enter your city" name="c_city" >
+            <input type="text" placeholder="Enter your city" name="c_city" required>
 
             <br><br>
             Username:
-            <input type="email" placeholder="Enter Username" name="cid" >
+            <input type="email" placeholder="Enter Username" name="cid" required>
 
             <br><br>
             <label class="pass">Password:</label>
-            <input type="password" placeholder="Enter Password" name="pwd" id="pwd">
+            <input type="password" placeholder="Enter Password" name="pwd" id="pwd" required>
 
 
             <br><br>
                  Address:
             <div class="add"> 
-                <textarea name="cadd" placeholder="Enter your Address" cols="63" rows="3" ></textarea>
+                <textarea name="cadd" placeholder="Enter your Address" cols="63" rows="3" required></textarea>
             </div> 
     
             <br><br>
                 Role Model:
-                <input type="text" placeholder="Enter your role model" name="role" style="margin-left: 23px;">
+                <input type="text" placeholder="Enter your role model" name="role" style="margin-left: 23px;" required>
 
             <br><br>
                 Aadhar Card:
-                <input type="file" name="idproof" accept="image/png, image/jpeg, image/jpg"  id="card">
+                <input type="file" name="idproof" accept="image/png, image/jpeg, image/jpg"  id="card" required>
             <br><br>
                 Licence:
-                <input type="file" name="licence" accept="image/png, image/jpeg, image/jpg"  id="lic">
+                <input type="file" name="licence" accept="image/png, image/jpeg, image/jpg"  id="lic" required>
             <br><br>
             <div class="btn">
                	 <button type="submit" >Submit</button>

@@ -1,14 +1,27 @@
+span{
+    /* border: 2px solid red; */
+}
+
 /* navbar css */
 .navbar-nav{
-    margin-left: 300px;
-  }
+    /* border: 2px solid red; */
+    margin-left: 250px;
+    padding: 0px;
+}
+
+.navbar-nav .nav-item{
+  /* border: 2px solid red; */
+  margin: 0px;
+  width: 130px;
+  height: 40px;
+}
   
   .navbar-nav .nav-link{
     margin-left: 30px;
   }
   
   .icon img{
-    margin-left: 500px;
+    margin-left: 330px;
   }
   .icon img:hover{
     cursor: pointer;

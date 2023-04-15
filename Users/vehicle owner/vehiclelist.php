@@ -1,8 +1,8 @@
 <html>
     <head>
         <title>Vehicle Details Webpage</title>
-        <?php include '../ohead.php' ?>
-        <link rel="stylesheet" href="listvehicle.css">
+        <?php include '../vhead.php' ?>
+        <link rel="stylesheet" href="vehlist.css">
     </head>
 <body>
 <?php
@@ -27,6 +27,14 @@ if($cmd1)
         $seat=$row[seat];
         $photo=$row[photo];
         $oid=$row[oid];
+        $status=$row[status];
+    ?>
+    <?php 
+    if($status){
+        $stt="Vehicle Booked";
+    }else{
+        $stt="Vehicle not booked";
+    }
     ?>
         <div class="container1">
                 <div class="img">
@@ -50,8 +58,9 @@ if($cmd1)
                     </div>
                     <div class="price">
                         <h1>&#x20B9;<?php echo $price?>/day</h1>
+                        <h5>Status: <?php echo $stt; ?></h5>
                         <p>Available till:- <?php echo $date?></p>
-                        <a href="vehicle details/vdata.php?vid=<?php echo $vid;?>"><button>Rent Now</button></a>
+                        <a href="bookpay/bookpay.php?vid=<?php echo $vid;?>"><button>Rent Now</button></a>
                     </div>
                 </div>
             </div>
